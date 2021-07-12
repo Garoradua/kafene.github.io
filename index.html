@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./login.css" />
+  </head>
+  <body>
+    <div>
+      <div class="header">
+        <div class="topbar">
+          <div class="logo-container">
+            <img src="./logo.png" alt="Logo" />
+            <p class="logo-text">Kafene</p>
+          </div>
+          <nav class="topbar-nav">
+            <a href="/order.html">Orders</a>
+            <a href="/products.html">Products</a>
+            <a href="/users.html">Users</a>
+          </nav>
+        </div>
+      </div>
+      <main>
+        <div>
+          <form class="login-form" method="POST">
+            <h1>Sign In</h1>
+            <input
+              type="text"
+              name="username"
+              class="username"
+              placeholder="Enter Username"
+            /><input
+              type="password"
+              name="password"
+              class="password"
+              placeholder="Enter Password"
+            /><input class="button" type="submit" value="Login" />
+          </form>
+        </div>
+      </main>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./login.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

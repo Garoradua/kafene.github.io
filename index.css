@@ -1,0 +1,151 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap);
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f6f7fb;
+}
+* {
+  box-sizing: border-box;
+}
+
+form,
+input,
+select,
+option,
+textarea {
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  margin-top: 100px;
+}
+.header {
+  width: 100%;
+  padding: 0 48px;
+  box-sizing: border-box;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0 2px 4px #ccc;
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  margin-right: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  width: 24px;
+  height: 28px;
+  margin-right: 8px;
+}
+
+.logo-text {
+  font-size: 24px;
+  letter-spacing: -1px;
+  font-weight: 500;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.topbar-nav a,
+.logout-button {
+  display: inline-block;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+
+  padding: 24px 0 16px;
+
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  margin: 0 10px;
+}
+
+.page-container {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 8% 4%;
+}
+
+.page-heading {
+  margin: 0;
+}
+
+.content-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding: 24px 0;
+}
+
+.filters-container {
+  width: 180px;
+  position: sticky;
+  top: 100px;
+}
+
+.filters-container h3 {
+  margin: 0;
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-checkboxes {
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.filter-checkboxes input {
+  margin-right: 12px;
+}
+
+.table-header {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-header th,
+.table-header td {
+  text-align: left;
+  padding: 12px 24px;
+  font-size: 14px;
+}
+
+.table-row td {
+  background-color: #fff;
+  border-bottom: 4px solid #f6f7fb;
+}
+
+.table-text-primary {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+}
+
+.table-text-gray {
+  color: #8c8c8c;
+}
+.active-nav {
+  color: #20b883 !important;
+  border-bottom: 3px solid #20b883;
+}

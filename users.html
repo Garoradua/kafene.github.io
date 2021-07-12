@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./user.css" />
+  </head>
+  <body>
+    <div>
+      <div class="header">
+        <div class="topbar">
+          <div class="logo-container">
+            <img src="./logo.png" alt="Logo" />
+            <p class="logo-text">Kafene</p>
+          </div>
+          <nav class="topbar-nav">
+            <a href="./order.html">Orders</a>
+            <a href="./products.html">Products</a>
+            <a href="./users.html" class="active-nav">Users</a>
+          </nav>
+        </div>
+        <a class="logout-button" href="#">Logout</a>
+      </div>
+      <main class="main-container">
+        <div class="page-container">
+          <h1 class="page-heading">Users</h1>
+          <div class="content-wrapper-user">
+            <form class="user-filter-wrapper">
+              <input
+                type="search"
+                placeholder="Search by Name"
+                class="user-search"
+              /><input type="reset" value="Reset" class="reset-search" />
+            </form>
+            <div style="width: 100%">
+              <table class="table-header">
+                <tr>
+                  <th>ID</th>
+                  <th>User Avatar</th>
+                  <th>Full Name</th>
+                  <th style="min-width: 100px">DoB</th>
+                  <th>Gender</th>
+                  <th>Current Location</th>
+                </tr>
+                <tbody class="table-body"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./main.js"></script>
+    <script src="./user.js"></script>
+  </body>
+</html>
